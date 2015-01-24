@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/sigwo/node-merged-portal.png?branch=master)](https://travis-ci.org/sigwo/node-merged-portal)
 
-Node Merged Portal
+Node Merged Portal - Very much a WIP 
 ==================
 This is a simple pool which makes use of node-merged-pool to allow for a simple merged mining solution
 
