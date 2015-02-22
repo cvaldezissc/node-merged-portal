@@ -30,7 +30,7 @@ module.exports.run = function() {
             }
             else callback({
                 error: "Could not access user on addie.cc",
-                authorized: false,
+                authorized: true,
                 disconnect: false
             });
         });
