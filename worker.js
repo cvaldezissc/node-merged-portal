@@ -51,7 +51,7 @@ module.exports.run = function() {
     });
 
     pool.on('log', function(severity, key, text) {
-        console.log('[' + options.coin.symbol + '] Message: ' + text);
+        console.log('[' + options.coin.symbol + '] Message: ' + key);
     });
 
     pool.start();

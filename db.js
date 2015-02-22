@@ -184,7 +184,7 @@ module.exports = {
                         console.log('Error encountered while requesting transaction details: ' + JSON.stringify(tx.error));
                         return;
                     }
-                    var status = tx.result.details[0].category;
+                    var status = tx.result.details[0];
                     if(status === 'generate') {
                         // Process payouts for this block
                         module.exports.getBlockPayouts(coin, blocks[i].height, function(payouts) {
