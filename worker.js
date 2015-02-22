@@ -7,7 +7,7 @@ var db = require('./db');
 var ADDR_API = 'http://addie.cc/api/';
 
 module.exports.run = function() {
-    //console.log('OPTIONS: ' + process.env.options);
+    console.log('OPTIONS: ' + process.env.options);
     var options = JSON.parse(process.env.options);
     var pool = Stratum.createPool(options, function(ip, port, user, password, callback) {
         console.log('AUTH from ' + ip + ':' + port + ' with user: ' + user);
@@ -31,7 +31,7 @@ module.exports.run = function() {
             else callback({
                 error: "Could not access user on addie.cc",
                 authorized: false,
-                disconnect: true
+                disconnect: false
             });
         });
     });

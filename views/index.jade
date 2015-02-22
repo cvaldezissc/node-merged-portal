@@ -20,7 +20,8 @@ block content
         hr
         h3= pool.coin.name
         each aux in pool.auxes
-            h4= "MERGED WITH: " + aux.name
+            h5= "MERGED WITH: " + aux.name
+            h5= "MERGED WITH: " + aux.name
         h4="HASHRATE: " + hashrates[i]
         each data,port in pool.ports
-            h5= "PORT: " + port + " DIFFICULTY: " + data.diff + " VARDIFF: " + (data.varDiff ? "YES" : "NO")
+            h6= "PORT: " + port + " DIFFICULTY: " + data.diff + " VARDIFF: " + (data.varDiff ? "YES" : "NO")
